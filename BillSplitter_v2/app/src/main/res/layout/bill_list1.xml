@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1">
+
+    <TextView
+        android:id="@+id/name_textview1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#8AACFF"
+        android:padding="10dp"
+        android:text="@string/nametextview"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        android:textSize="20sp"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:weightSum="1">
+
+        <TextView
+            android:id="@+id/currency"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:background="#8983F3"
+            android:padding="10dp"
+            android:text="@string/currency"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/price_textview1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:background="#8983F3"
+            android:padding="10dp"
+            android:text="@string/pricetextview"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+
+</LinearLayout>
+</LinearLayout>

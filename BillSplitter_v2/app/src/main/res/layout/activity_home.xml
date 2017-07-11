@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:weightSum="1"
+       android:background="#DFEFF0" >
+
+    <TextView
+                        android:id="@+id/title1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="#DFEFF0"
+                        android:padding="10dp"
+                        android:text="@string/billtextview"
+                        android:textColor="#3544cc"
+                        android:textSize="25sp"
+        />
+
+
+                    <ListView
+                        android:id="@+id/list"
+                        android:layout_width="match_parent"
+                        android:layout_height="374dp"
+                        android:layout_weight="0.76"
+                        tools:ignore="InefficientWeight">
+
+                    </ListView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/fab_margin"
+                        android:layout_gravity="bottom|right"
+                        tools:ignore="RtlHardcoded">
+
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_refresh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/fab_margin_right"
+                            android:layout_marginEnd="@dimen/fab_margin_right"
+                            android:clickable="true"
+                            app:fabSize="normal"
+                            app:pressedTranslationZ="12dp"
+                            app:srcCompat="@drawable/ic_action_refresh"
+                            app:backgroundTint="@color/fab4_color"
+                            android:visibility="invisible"/>
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_calculator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/fab_margin_right"
+                            android:layout_marginEnd="@dimen/fab_margin_right"
+                            android:clickable="true"
+                            app:fabSize="normal"
+                            app:pressedTranslationZ="12dp"
+                            app:srcCompat="@drawable/ic_action_calculator"
+                            app:backgroundTint="@color/fab3_color"
+                            android:visibility="invisible"/>
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/fab_margin_right"
+                            android:layout_marginEnd="@dimen/fab_margin_right"
+                            android:clickable="true"
+                            app:fabSize="normal"
+                            app:pressedTranslationZ="12dp"
+                            app:srcCompat="@drawable/ic_action_add"
+                            app:backgroundTint="@color/fab1_color"
+                            android:visibility="invisible"/>
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/fab_margin_right"
+                            android:layout_marginRight="@dimen/fab_margin_right"
+                            android:clickable="true"
+                            android:visibility="invisible"
+                            app:backgroundTint="@color/fab2_color"
+                            app:fabSize="normal"
+                            app:pressedTranslationZ="12dp"
+                            app:srcCompat="@drawable/ic_action_delete"/>
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_plus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            app:fabSize="normal"
+                            app:pressedTranslationZ="12dp"
+                            app:srcCompat="@drawable/ic_action_plus"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+

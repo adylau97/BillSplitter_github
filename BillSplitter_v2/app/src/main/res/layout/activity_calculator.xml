@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.inti.student.billsplitter_v2.Calculator"
+                android:background="#ff8c00"
+                android:padding="0dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="207dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textIsSelectable="true"
+        android:text="@string/zero"
+        android:id="@+id/textView"
+        android:background="#ffffff"
+        android:layout_margin="0dp"
+        android:gravity="bottom|end"
+        android:textSize="70sp"
+        android:maxLines="2"
+        android:maxLength="17"/>
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="start"
+                android:columnCount="4"
+                android:rowCount="5"
+                android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="#4d4d4d"
+            android:onClick="onClickNumber"
+            android:text="@string/one"
+            android:textColor="#ffffff"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="#4d4d4d"
+            android:onClick="onClickNumber"
+            android:text="@string/two"
+            android:textColor="#ffffff"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="#4d4d4d"
+            android:onClick="onClickNumber"
+            android:text="@string/three"
+            android:textColor="#ffffff"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="#4d4d4d"
+            android:maxWidth="90dp"
+            android:onClick="onClickOperator"
+            android:text="@string/plus"
+            android:textColor="#ffffff"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="#4d4d4d"
+            android:onClick="onClickNumber"
+            android:text="@string/four"
+            android:textColor="#ffffff"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="#4d4d4d"
+            android:onClick="onClickNumber"
+            android:text="@string/five"
+            android:textColor="#ffffff"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="#4d4d4d"
+            android:onClick="onClickNumber"
+            android:text="@string/six"
+            android:textColor="#ffffff"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="#4d4d4d"
+            android:onClick="onClickOperator"
+            android:text="@string/minus"
+            android:textColor="#ffffff"
+            android:textSize="30sp"/>
+
+        <Button
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="@string/seven"
+        android:id="@+id/btn7"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:background="#4d4d4d"
+        android:onClick="onClickNumber"
+        android:maxWidth="90dp" />
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="@string/eight"
+        android:id="@+id/btn8"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:background="#4d4d4d"
+        android:onClick="onClickNumber"
+        android:maxWidth="90dp" />
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="@string/nine"
+        android:id="@+id/btn9"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:background="#4d4d4d"
+        android:onClick="onClickNumber"
+        android:maxWidth="90dp" />
+
+        <Button
+            android:id="@+id/btnMult"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="#4d4d4d"
+            android:onClick="onClickOperator"
+            android:text="@string/times"
+            android:textColor="#ffffff"
+            android:textSize="30sp"/>
+
+        <Button
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="@string/delete"
+        android:id="@+id/btnClear"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:background="#4d4d4d"
+        android:onClick="onClickClear" />
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="#4d4d4d"
+            android:onClick="onClickNumber"
+            android:text="@string/zero"
+            android:textColor="#ffffff"
+            android:textSize="30sp"/>
+
+        <Button
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="@string/equal"
+        android:id="@+id/btnEqual"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:background="#4d4d4d"
+        android:onClick="onClickEqual" />
+
+        <Button
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="@string/divide"
+        android:id="@+id/btnDiv"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:background="#4d4d4d"
+        android:onClick="onClickOperator" />
+
+    </GridLayout>
+</LinearLayout>

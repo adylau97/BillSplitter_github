@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">BillSplit</string>
+    <string name="create_btn">Create</string>
+    <string name="first_dialog">Welcome</string>
+    <string name="greetings">Hello, this is an bill spliter app. It allows you students to split bills among your friends with ease.</string>
+    <string name="gsthint">Enter GST</string>
+    <string name="servicechargehint">Enter Service Charge </string>
+    <string name="submit_btn">Submit</string>
+    <string name="success_submit_msg">Submit successful!!</string>
+    <string name="fail_submit_msg">Please select an option!!</string>
+    <string name="namehint">Enter name</string>
+    <string name="pricehint">Enter total price</string>
+    <string name="nametextview">Name</string>
+    <string name="pricetextview">Price</string>
+    <string name="billtextview">Bill List</string>
+    <string name="success_create_msg">Create successful!!</string>
+    <string name="fail_create_msg">Please fill any empty field or the price field should not be 0!!</string>
+    <string name="edit_btn">Edit</string>
+    <string name="success_edit_msg">Edit successful!!</string>
+    <string name="fail_edit_msg">Please fill any empty field or the price field should not be 0!!</string>
+    <string name="totalppl">Total people</string>
+    <string name="over_msg">You are required to select an option!!</string>
+    <string name="error_msg">Error!! You havent input GST, service charge and total people!!</string>
+    <string name="currency">RM</string>
+    <string name="delete_all_msg">Delete All Successful!!</string>
+    <string name="delete_msg">Delete Successful!!</string>
+    <string name="error_msg2">Error!! The bill list is empty!!</string>
+    <string name="name_exist_msg">Name exist!! Please use a different name!!</string>
+    <string name="skip_msg">On skip clicked!!</string>
+    <string name="slide_msg">On slide clicked!!</string>
+    <string name="icon">Icon</string>
+    <string name="action_settings">Setting</string>
+    <string name="deletequestion">Are you sure you want to remove all item from the list??</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="equal">=</string>
+    <string name="times">x</string>
+    <string name="divide">÷</string>
+    <string name="delete">C</string>
+    <string name="GSTselection">Please choose an option.</string>
+    <string name="r1">None</string>
+    <string name="r2">GST</string>
+    <string name="r3">Service Charge</string>
+    <string name="r4">Both</string>
+
+</resources>

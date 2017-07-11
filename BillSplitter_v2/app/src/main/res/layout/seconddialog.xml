@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:padding="10dp">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        tools:ignore="UselessParent">
+
+        <EditText
+            android:id="@+id/GST"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="#fff"
+            android:hint="@string/gsthint"
+            android:inputType="number|numberSigned|numberDecimal"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/ServiceCharge"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="#fff"
+            android:hint="@string/servicechargehint"
+            android:inputType="number|numberSigned|numberDecimal"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/totalppl"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="#fff"
+            android:hint="@string/totalppl"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dip"
+            android:background="#2937ff"
+            android:text="@string/submit_btn"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</LinearLayout>
