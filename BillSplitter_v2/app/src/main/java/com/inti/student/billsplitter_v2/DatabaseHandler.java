@@ -52,7 +52,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.close();
     }
 
-    /*public Bill_list getHistory (int id) {
+    public Bill_list getHistory (int id) {
         SQLiteDatabase db = getReadableDatabase();
 
         Cursor cursor = db.query(TABLE_HISTORY, new String[] { KEY_ID, KEY_NAME, KEY_PRICE }, KEY_ID + "=?", new String[] { String.valueOf(id) }, null, null, null, null );
