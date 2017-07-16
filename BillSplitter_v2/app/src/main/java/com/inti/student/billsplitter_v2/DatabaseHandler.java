@@ -64,7 +64,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.close();
         cursor.close();
         return bill_list;
-    }*/
+    }
 
     public void deleteHistory(Bill_list bill_list) {
         SQLiteDatabase db = getWritableDatabase();
@@ -83,18 +83,18 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return count;
     }
 
-   /*public int updateHistory(Bill_list bill_list) {
+   public int updateHistory(Bill_list bill_list) {
         SQLiteDatabase db = getWritableDatabase();
 
         ContentValues values = new ContentValues();
 
         values.put(KEY_NAME, bill_list.getName());
         values.put(KEY_PRICE, bill_list.getPrice());
-        int rowsAffected = db.update(TABLE_HISTORY, values, KEY_ID + "=?", new String[] { String.valueOf(bill_list.getId()) });
+       int rowsAffected=db.update(TABLE_HISTORY, values, KEY_NAME + "=?", new String[] { String.valueOf(bill_list.getName()) });
         db.close();
 
         return rowsAffected;
-    }*/
+    }
 
     public List<Bill_list> getAllHistory() {
         List<Bill_list> bill_lists = new ArrayList<Bill_list>();

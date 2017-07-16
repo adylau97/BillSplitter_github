@@ -22,14 +22,14 @@
         />
 
 
-                    <ListView
-                        android:id="@+id/list"
-                        android:layout_width="match_parent"
-                        android:layout_height="374dp"
-                        android:layout_weight="0.76"
-                        tools:ignore="InefficientWeight">
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="374dp"
+        android:layout_weight="0.76"
+        tools:ignore="InefficientWeight">
 
-                    </ListView>
+    </ListView>
 
                     <LinearLayout
                         android:layout_width="wrap_content"

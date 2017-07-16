@@ -359,17 +359,15 @@ public class HomeActivity extends AppCompatActivity {
                             String formatted =dFormat.format(result);
 
                             //Get price and name and store it into bill_list2 temporarily
-                            Bill_list bill_list2 = new Bill_list(dbHandler.getHistoryCount(), String.valueOf(Name_text2.getText()),formatted );
+                            Bill_list bill_list2 = new Bill_list(temp.getId(), String.valueOf(Name_text2.getText()),formatted );
 
                             if(r1.isChecked()||r2.isChecked()||r3.isChecked()||r4.isChecked()) {
                                 if (result != 0) {
-                                    //Delete data which user click in the database
-                                    dbHandler.deleteHistory(bill_list.get(clickedItemIndex));
-                                    bill_list.remove(clickedItemIndex);
 
-                                    //Store data into database and show it on listview
-                                    dbHandler.createHistory(bill_list2);
-                                    bill_list.add(bill_list2);
+                                    //Update list view
+                                    bill_list.set(clickedItemIndex,bill_list2);
+                                    //Update database
+                                    dbHandler.updateHistory(bill_list2);
 
                                     billadapter.notifyDataSetChanged();
 
